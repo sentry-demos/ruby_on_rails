@@ -1,0 +1,32 @@
+
+<div class="center">
+<form>
+    <div class="form-group">
+        <input type="email" class="form-control" onChange={this.handleChange} placeholder="Enter email"/>
+    </div>
+    <button type="submit" onClick="window.location = 'pages/errors'" class="btn btn-primary">Submit</button>  
+</form>
+</div>
+
+
+<ul class="center list-group ">
+<li class="list-group-item list-group-item-danger">
+    <h2>ERRORS</h2>
+</li>
+<li class="list-group-item" onClick="window.location = 'pages/type_error'">
+    <h3>Type Error</h3>
+</li>
+<li class="list-group-item" onClick="window.location = 'pages/div_by_0_error'">
+<h3>Divide By Zero</h3>
+</li>
+<li class="list-group-item" onClick="window.location = 'pages/undefined_error'">
+<h3>Undefined Method Error</h3>
+</li>
+<li class="list-group-item" onClick="window.location = 'pages/undefined_route_error'">
+<h3>Undefined Route Error</h3>
+</li>
+
+
+
+</ul>
+</div>

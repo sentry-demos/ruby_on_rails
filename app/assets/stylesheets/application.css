@@ -1,0 +1,134 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ .App{
+    text-align: center;
+    background-image: url(sentry-pattern.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.App-logo{
+    /* animation: App-logo-spin infinite 20s linear; */
+    height: 80px;
+}
+
+.App-header{
+    /* background-image: url('../assets/sentry-pattern.png'); */
+    height: 150px;
+    padding: 20px;
+    color: black;
+}
+
+.App-intro{
+    font-size: large;
+}
+
+
+h1{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #317eac;
+}
+
+h2{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #317eac;
+}
+
+h3{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #317eac;
+}
+
+li img{
+    float: left;
+    /* margin: 0 15px 0 0; */
+    height: 50px;
+}
+
+li:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.left {
+    /* margin: auto; */
+    width: 50%;
+    padding: 10px;
+    float: left;
+}
+
+.right {
+    /* margin: auto; */
+    width: 50%;
+    padding: 10px;
+    float: right;
+}
+
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #ffffff;
+    border: 1px solid#dddddd;
+}
+
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #2fa4e7;
+    border-color: #2fa4e7;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.list-group-item-danger {
+    color: #b94a48;
+    background-color: #f2dede;
+}

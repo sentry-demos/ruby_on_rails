@@ -24,7 +24,8 @@ class PagesController < ApplicationController
   end
 
   def wrong_num_args_error
-    some_function("string", "  ") 
+    a = []
+    a[]
   end
   
   def syntax_error

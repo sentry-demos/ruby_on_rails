@@ -2,10 +2,12 @@
 <div class="center">
 <form>
     <div class="form-group">
-        <input type="email" class="form-control" onChange={this.handleChange} placeholder="Enter email"/>
+    <%= text_field(:post, :email_address, size: 100, placeholder: @email_address) %>
     </div>
     <button type="submit" onClick="window.location = 'pages/errors'" class="btn btn-primary">Submit</button>  
 </form>
+
+
 </div>
 
 
@@ -16,17 +18,32 @@
 <li class="list-group-item" onClick="window.location = 'pages/type_error'">
     <h3>Type Error</h3>
 </li>
+<li class="list-group-item" onClick="window.location = 'pages/load_error'">
+<h3>Load Error</h3>
+</li>
+<li class="list-group-item" onClick="window.location = 'pages/syntax_error'">
+<h3>Syntax Error</h3>
+</li>
+<li class="list-group-item" onClick="window.location = 'pages/index_error'">
+<h3>Index Error</h3>
+</li>
 <li class="list-group-item" onClick="window.location = 'pages/div_by_0_error'">
 <h3>Divide By Zero</h3>
-</li>
-<li class="list-group-item" onClick="window.location = 'pages/undefined_error'">
-<h3>Undefined Method Error</h3>
 </li>
 <li class="list-group-item" onClick="window.location = 'pages/undefined_route_error'">
 <h3>Undefined Route Error</h3>
 </li>
-
-
-
+<li class="list-group-item" onClick="window.location = 'pages/undefined_error'">
+<h3>Undefined Variable Error</h3>
+</li>
+<li class="list-group-item" onClick="window.location = 'pages/undefined_method_error'">
+<h3>Undefined Method Error</h3>
+</li>
+<li class="list-group-item" onClick="window.location = 'pages/wrong_num_args_error'">
+<h3>Wrong Number Of Arguments Error</h3>
+</li>
 </ul>
+
+<br><br><br><br>
+<br><br><br><br>
 </div>

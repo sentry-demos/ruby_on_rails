@@ -9,5 +9,15 @@ Rails.application.routes.draw do
 
   get  'pages/nil_error'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get  'pages/wrong_num_args_error'
+
+  get  'pages/syntax_error'
+ 
+  get  'pages/load_error'
+
+  get  'pages/index_error'
+
+  get  'pages/undefined_error'
+
+  get  'pages/undefined_method_error'
 end

@@ -17,16 +17,21 @@ This app demonstrates how to include and configure Sentry-Raven into a Ruby on R
 
 ## Setup Instructions
 1. Add Sentry-Raven gem to Gemfile
-```gem "sentry-raven"```
+
+```
+gem "sentry-raven"
+```
 
 2. Set the DSN in application.rb 
-```Raven.configure do |config|
-  config.dsn = 'https://*******@sentry.io/223232323434'
-end```
 
+```
+Raven.configure do |config|
+  config.dsn = 'https://*******@sentry.io/22323232343'
+end
+```
 
 3. Modify application_controller.rb 
-``` 
+```
 class ApplicationController < ActionController::Base
   before_action :set_raven_context
   

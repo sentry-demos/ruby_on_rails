@@ -51,3 +51,18 @@ More installation details here: https://docs.sentry.io/clients/ruby/
 To easily leverage Sentry's Releases and Commits features, install sentry-cli. Installation instructions here: https://docs.sentry.io/learn/cli/installation/
 
 
+
+## Deploy to Heroku
+Note: Download and install Heroku Toolbelt
+1. Create a heroku project in your local repo
+```
+heroku create
+```
+
+2. Deploy remote repo onto heroku server
+```
+git push herkou master
+```
+
+
+

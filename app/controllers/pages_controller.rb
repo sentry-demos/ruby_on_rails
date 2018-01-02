@@ -1,9 +1,9 @@
 class PagesController < ApplicationController
-  
+
 
   def login
-    @email_address = get_email_address  
-    Raven.user_context( email: @email_address) if @email_address
+    @@email_address = get_email_address  
+    #Raven.user_context( email: @@email_address) if @@email_address
     #binding.pry
   end
   

@@ -7,6 +7,8 @@ end
 
 gem "sentry-raven"
 
+gem 'pry-rails', group: [:development, :test]
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use Puma as the app server

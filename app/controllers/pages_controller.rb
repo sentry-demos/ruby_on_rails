@@ -1,12 +1,15 @@
 class PagesController < ApplicationController
   
+
   def login
-    @email_address = get_email_address
-    Raven.user_context(
-      email: @email_address
-    )
+    @email_address = get_email_address  
+    Raven.user_context( email: @email_address) if @email_address
+    #binding.pry
   end
   
+  def errors 
+  end
+
   def div_by_0_error
     1 / 0 
   end
@@ -25,6 +28,7 @@ class PagesController < ApplicationController
 
   def wrong_num_args_error
     a = []
+    #binding.pry    
     a[]
   end
   

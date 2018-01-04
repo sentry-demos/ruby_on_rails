@@ -19,5 +19,5 @@ end
 
 
 Raven.configure do |config|
-  config.dsn = 'https://bac4dc884c004cddb25e6483f918bcbc:7301d9f0b625481f92f71a2f1b9ed6c5@sentry.io/258421'
+  config.dsn = 'https://*****:*****@sentry.io/258421'
 end

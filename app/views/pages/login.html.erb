@@ -1,11 +1,13 @@
 
 <div class="center">
-    <form>
+        <%= content_tag(:div, content_tag(:p, "Hi, #{session[:email_address]}"), class: "strong") %>
         <div class="form-group">
-        <%= text_field(:post, :email_address, size: 100, placeholder: "Email Address") %>
+            
+            <%= form_tag("/", method: "get") do %>
+                <%= text_field_tag(:q) %>
+                <%= submit_tag("Submit") %>
+            <% end %>
         </div>
-        <button type="submit" onClick="window.location = 'pages/login'" class="btn btn-primary">Submit</button>  
-    </form>
 </div>
 
 

@@ -2,9 +2,7 @@ class PagesController < ApplicationController
 
 
   def login
-    @@email_address = get_email_address  
-    #Raven.user_context( email: @@email_address) if @@email_address
-    #binding.pry
+    session[:email_address] =  params[:q] if params[:q]
   end
   
   def errors 
@@ -28,7 +26,6 @@ class PagesController < ApplicationController
 
   def wrong_num_args_error
     a = []
-    #binding.pry    
     a[]
   end
   
@@ -51,9 +48,5 @@ class PagesController < ApplicationController
   end
 
   private
-
-  def get_email_address
-    email_address =  params["post"]["email_address"] if params["post"]
-  end  
 
 end

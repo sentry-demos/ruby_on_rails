@@ -9,11 +9,6 @@ This app demonstrates how to include and configure Sentry-Raven into a Ruby on R
 
 * Install Rails version 5.1.4
 
-* Configuration
-
-* Deployment instructions
-
-
 
 ## Setup Instructions
 1. Add Sentry-Raven gem to Gemfile

@@ -46,7 +46,8 @@ More installation details here: https://docs.sentry.io/clients/ruby/
 ## Sentry-cli
 To easily leverage Sentry's Releases and Commits features, install sentry-cli. Installation instructions here: https://docs.sentry.io/learn/cli/installation/
 
-
+## Notes on routing errors
+By default `raven-ruby` ignores `ActionController::RoutingError`. For the purpose of demonstrating the `Undefined Route Error`, ```config.excluded_exceptions = []``` was added to the Raven config in `application.rb`. This configuration changes the default behavior to allow routing errors to appear in Sentry.
 
 ## Deploy to Heroku
 Note: Download and install Heroku Toolbelt

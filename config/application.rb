@@ -20,4 +20,5 @@ end
 
 Raven.configure do |config|
   config.dsn = 'https://*****:*****@sentry.io/258421'
+  config.excluded_exceptions = []
 end

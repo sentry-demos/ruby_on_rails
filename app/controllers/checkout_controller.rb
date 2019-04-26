@@ -34,8 +34,9 @@ class CheckoutController < ApplicationController
     
     def handled
         begin
-            '2' + 2
+            '2' + 3
         rescue Exception => exception
+            
             Raven.capture_exception(exception)
             render json: { "/handled": exception.message  }, status: :ok
         end

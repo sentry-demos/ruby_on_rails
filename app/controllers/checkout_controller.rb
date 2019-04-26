@@ -25,10 +25,10 @@ class CheckoutController < ApplicationController
 
     def cart
         order = JSON.parse request.body.read
-        print "Processing order for: " + order["email"]
+        print "Processing order for: " + order["email"] + "\n"
         cart = order["cart"]
         process_order(cart)
-        
+
         render json: { "/cart": "OK"  }, status: :ok
     end
     

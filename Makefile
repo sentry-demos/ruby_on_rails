@@ -4,13 +4,19 @@
 #  or have it set as environment variable
 
 SENTRY_ORG=testorg-az
-SENTRY_PROJECT=rails
+SENTRY_PROJECT=rails-demo
 VERSION=`sentry-cli releases propose-version`
 
-setup_release: create_release associate_commits
+deploy: create_release associate_commits run_rails
+
 
 create_release:
 	sentry-cli releases -o $(SENTRY_ORG) new -p $(SENTRY_PROJECT) $(VERSION)
 
 associate_commits:
 	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) set-commits --auto $(VERSION)
+
+
+run_rails:
+	VERSION=$(VERSION) bin/rails server -p 3001
+

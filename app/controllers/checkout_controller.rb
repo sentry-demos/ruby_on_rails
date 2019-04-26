@@ -6,6 +6,7 @@ $Inventory = {
 
 class CheckoutController < ApplicationController
     def process_order(cart)
+        Raven.extra_context "inventory": $Inventory
         tempInventory = $Inventory
 
         cart.each do |item, value|

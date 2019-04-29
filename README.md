@@ -31,7 +31,7 @@ end
 6. run `make`, which (Makefile) creates a Sentry release and runs Rails
 7. `make deploy` and go to `localhost:3001/handled`
 ## GIF
-...
+![Alt Text](ruby_on_rails-demo.gif)
 
 
 ## Notes on routing errors

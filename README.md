@@ -4,8 +4,8 @@ This app demonstrates how to include and configure Sentry-Raven into a Ruby on R
 
 ## Summary
 To show how Sentry works in an example web app that uses Rails
-- how to integrate the Sentry SDK into Rails https://docs.sentry.io/clients/ruby/
-- trigger an error that gets sent as Event to Sentry.io Platform
+- integrate the Sentry SDK into Rails https://docs.sentry.io/clients/ruby/
+- trigger error that gets sent as event to sentry.io
 - `checkout_controller.rb` has multiple endpoints for showing different ways that errors are handled
 - Sentry Release cycle covered in `Makefile`
 

@@ -29,7 +29,7 @@ end
 4. Configure sentry-cli (is for creating Sentry releases) with your `SENTRY_AUTH_TOKEN` in Makefile or run `export SENTRY_AUTH_TOKEN=<your_auth_token>`. Do the same for `SENTRY_ORG` and `SENTRY_PROJECT`
 5. Check your Github repo is integrated into your Sentry organization.
 6. run `make`, which (Makefile) creates a Sentry release and runs Rails
-7. `make deploy` and go to `localhost:3000/handled`
+7. `make deploy` and go to `localhost:3001/handled`
 ## GIF
 ...
 

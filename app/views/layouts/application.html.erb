@@ -1,22 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RubyOnRails</title>
+    <title>TestRails</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
   </head>
 
   <body>
-  <div class="App">
-  <div class="App-header">
-      <h1>Sentry.io -  Sample Error Page</h1>
-  </div>
-  <p class="App-intro"></p>
-  <%= yield %>
-  </div>
-
+    <%= yield %>
   </body>
 </html>

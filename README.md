@@ -1,6 +1,16 @@
 # sentry-demos/ruby_on_rails
-To show how Sentry works in an example Rails app
-This app demonstrates how to include and configure Sentry-Raven into a Ruby on Rails application.
+
+## Versions Summary:
+
+| dependency      | version           
+| ------------- |:-------------:| 
+| sentry-ruby      | 0.1.3  |
+| ruby      | 2.6.3p62  |
+| sentry-cli   | 1.59.0    |
+
+This app demonstrates how to include and configure Sentry-Ruby into a Ruby on Rails application.
+
+The Sentry-Ruby sdk replaces the sentry-raven sdk and will include new Sentry features going forward.
 
 ## Summary
 To show how Sentry works in an example web app that uses Rails
@@ -21,7 +31,7 @@ bundle install
 3. Set the DSN in application.rb
 
 ``` ruby
-Raven.configure do |config|
+Sentry.init do |config|
   config.dsn = 'https://*******@sentry.io/22323232343'
 end
 ```
@@ -35,6 +45,9 @@ end
 
 
 ## Notes on routing errors
-By default `raven-ruby` ignores `ActionController::RoutingError`. For the purpose of demonstrating the `Undefined Route Error`, ```config.excluded_exceptions = []``` was added to the Raven config in `application.rb`. This configuration changes the default behavior to allow routing errors to appear in Sentry.
+By default `sentry-ruby` ignores `ActionController::RoutingError`. For the purpose of demonstrating the `Undefined Route Error`, ```config.excluded_exceptions = []``` was added to the Raven config in `application.rb`. This configuration changes the default behavior to allow routing errors to appear in Sentry.
 
+** Not yet updated for latest SDK **
 More installation details here: https://docs.sentry.io/clients/ruby/
+Reference documentation here: https://github.com/getsentry/sentry-ruby/tree/master/sentry-ruby
+Information on migrating from sentry-raven here: https://github.com/getsentry/sentry-ruby/blob/master/MIGRATION.md

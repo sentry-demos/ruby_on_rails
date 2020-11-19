@@ -7,7 +7,7 @@ $Inventory = {
 class CheckoutController < ApplicationController
     def process_order(cart)
         Sentry.with_scope do |scope|
-            scope.set_extra(inventory: $Inventory)
+            scope.set_extra("inventory", $Inventory)
         end
         tempInventory = $Inventory
 

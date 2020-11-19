@@ -17,7 +17,6 @@ class ApplicationController < ActionController::Base
     Sentry.configure_scope do |scope|
       scope.set_user(email: email)
       scope.set_tags("transaction-id": xactionId, "session-id": sessionId)
-      # scope.set_tags(session-id: request.headers["X-Session-ID"])
     end
   end
 end

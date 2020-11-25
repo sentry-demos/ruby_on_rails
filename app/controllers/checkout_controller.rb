@@ -6,7 +6,9 @@ $Inventory = {
 
 class CheckoutController < ApplicationController
     def process_order(cart)
-        Raven.extra_context "inventory": $Inventory
+        Sentry.with_scope do |scope|
+            scope.set_extra("inventory", $Inventory)
+        end
         tempInventory = $Inventory
 
         cart.each do |item, value|
@@ -36,7 +38,7 @@ class CheckoutController < ApplicationController
         begin
             '2' + 3
         rescue Exception => exception
-            Raven.capture_exception(exception)
+            Sentry.capture_exception(exception)
             render json: { "ERROR": exception.message  }, status: :ok
         end
     end

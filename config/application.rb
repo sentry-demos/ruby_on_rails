@@ -8,8 +8,7 @@ module TestRails
   end
 end
 
-Raven.configure do |config|
+Sentry.init do |config|
   config.dsn = 'https://c74d756a9db448228ee9aa26ffab404e@sentry.io/1445853'
-  config.excluded_exceptions = []
-  config.release = ENV['VERSION']
 end
+
